@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | CouponHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="bg-background text-foreground font-sans">
+    <div id="header-placeholder"></div>
+    <main class="py-16 container mx-auto px-4 max-w-2xl">
+        <h1 class="text-4xl font-bold mb-4 text-center">Get in Touch</h1>
+        <p class="text-muted-foreground text-center mb-12">Have a question or a new coupon to share? We'd love to hear from you.</p>
+        <form class="space-y-6 bg-card border p-8 rounded-2xl">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-2">
+                    <label class="text-sm font-medium">Name</label>
+                    <input type="text" class="w-full px-4 py-2 bg-muted border rounded-lg focus:ring-2 ring-primary/20 outline-none" placeholder="John Doe">
+                </div>
+                <div class="space-y-2">
+                    <label class="text-sm font-medium">Email</label>
+                    <input type="email" class="w-full px-4 py-2 bg-muted border rounded-lg focus:ring-2 ring-primary/20 outline-none" placeholder="john@example.com">
+                </div>
+            </div>
+            <div class="space-y-2">
+                <label class="text-sm font-medium">Subject</label>
+                <input type="text" class="w-full px-4 py-2 bg-muted border rounded-lg focus:ring-2 ring-primary/20 outline-none" placeholder="Coupon Submission">
+            </div>
+            <div class="space-y-2">
+                <label class="text-sm font-medium">Message</label>
+                <textarea rows="4" class="w-full px-4 py-2 bg-muted border rounded-lg focus:ring-2 ring-primary/20 outline-none" placeholder="Your message here..."></textarea>
+            </div>
+            <button type="submit" class="w-full py-3 bg-primary text-primary-foreground font-bold rounded-lg hover:bg-primary/90 transition-colors">Send Message</button>
+        </form>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script>
+        async function loadComponent(id, file) {
+            const res = await fetch(file);
+            const html = await res.text();
+            document.getElementById(id).innerHTML = html;
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            loadComponent('header-placeholder', 'components/header.html');
+            loadComponent('footer-placeholder', 'components/footer.html');
+        });
+    </script>
+</body>
+</html>

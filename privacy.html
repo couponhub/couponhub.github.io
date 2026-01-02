@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | CouponHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="bg-background text-foreground font-sans">
+    <div id="header-placeholder"></div>
+    <main class="py-16 container mx-auto px-4 max-w-4xl prose prose-slate">
+        <h1 class="text-4xl font-bold mb-8">Privacy Policy</h1>
+        <p class="text-muted-foreground">Last Updated: January 2026</p>
+        <section class="mt-8 space-y-4 text-muted-foreground">
+            <h2 class="text-2xl font-bold text-foreground">1. Information We Collect</h2>
+            <p>We collect minimal information required to provide our services, including browser type, referral source, and length of visit. We do not require account creation for most services.</p>
+            <h2 class="text-2xl font-bold text-foreground">2. Cookies</h2>
+            <p>We use cookies to understand site usage and to improve the content and offerings on our site. You can control the use of cookies at the individual browser level.</p>
+            <h2 class="text-2xl font-bold text-foreground">3. Third Party Links</h2>
+            <p>Our site contains links to other sites. We are not responsible for the privacy practices or the content of such sites. We encourage you to review their privacy policies.</p>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script>
+        async function loadComponent(id, file) {
+            const res = await fetch(file);
+            const html = await res.text();
+            document.getElementById(id).innerHTML = html;
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            loadComponent('header-placeholder', 'components/header.html');
+            loadComponent('footer-placeholder', 'components/footer.html');
+        });
+    </script>
+</body>
+</html>

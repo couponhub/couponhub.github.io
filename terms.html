@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | CouponHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="bg-background text-foreground font-sans">
+    <div id="header-placeholder"></div>
+    <main class="py-16 container mx-auto px-4 max-w-4xl prose prose-slate">
+        <h1 class="text-4xl font-bold mb-8">Terms of Service</h1>
+        <p class="text-muted-foreground">Last Updated: January 2026</p>
+        <section class="mt-8 space-y-4 text-muted-foreground">
+            <h2 class="text-2xl font-bold text-foreground">1. Use of Service</h2>
+            <p>By using CouponHub, you agree to these terms. Our service is provided "as is" and we do not guarantee that all coupons are valid at all times.</p>
+            <h2 class="text-2xl font-bold text-foreground">2. Affiliate Disclosure</h2>
+            <p>Some of the links on this website are affiliate links, which means we may earn a commission if you click on the link or make a purchase using the link.</p>
+            <h2 class="text-2xl font-bold text-foreground">3. Limitation of Liability</h2>
+            <p>CouponHub shall not be liable for any damages that result from the use of, or the inability to use, the materials on this site or the performance of the products.</p>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script>
+        async function loadComponent(id, file) {
+            const res = await fetch(file);
+            const html = await res.text();
+            document.getElementById(id).innerHTML = html;
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            loadComponent('header-placeholder', 'components/header.html');
+            loadComponent('footer-placeholder', 'components/footer.html');
+        });
+    </script>
+</body>
+</html>

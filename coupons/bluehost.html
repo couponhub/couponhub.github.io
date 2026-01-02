@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluehost Coupon: 75% Off + Free Domain (Jan 2026) | CouponHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../globals.css">
+    <script defer src="../script.js"></script>
+</head>
+<body class="bg-background text-foreground font-sans">
+    <div id="header-placeholder"></div>
+    <main class="py-12">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="bg-card border rounded-3xl p-8 md:p-12 shadow-sm text-center">
+                <div class="w-32 h-32 bg-muted rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <img src="/placeholder.svg?height=80&width=80" alt="Bluehost">
+                </div>
+                <h1 class="text-4xl font-bold mb-4">Bluehost Coupon: 75% Off + Free Domain</h1>
+                <p class="text-muted-foreground text-lg mb-8">Save big on your next hosting plan with this verified Bluehost promo code.</p>
+                <div class="p-8 bg-muted rounded-2xl border-2 border-dashed border-primary/20 mb-8 max-w-sm mx-auto">
+                    <span class="text-sm text-muted-foreground block mb-2 font-medium">YOUR CODE</span>
+                    <span class="text-3xl font-black text-primary tracking-widest uppercase">AUTO-APPLY</span>
+                </div>
+                <button class="px-12 py-4 bg-primary text-primary-foreground font-bold rounded-xl text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">ACTIVATE DEAL & VISIT SITE</button>
+            </div>
+            
+            <section class="mt-12 space-y-8">
+                <div class="prose prose-slate max-w-none">
+                    <h2 class="text-2xl font-bold mb-4">About this Bluehost Deal</h2>
+                    <p class="text-muted-foreground">This exclusive Bluehost offer is valid for new customers and includes everything you need to launch your website: a free domain name for the first year, a free SSL certificate, and one-click WordPress installation.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script>
+        async function loadComponent(id, file) {
+            const res = await fetch(file);
+            const html = await res.text();
+            document.getElementById(id).innerHTML = html;
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            loadComponent('header-placeholder', '../components/header.html');
+            loadComponent('footer-placeholder', '../components/footer.html');
+        });
+    </script>
+</body>
+</html>

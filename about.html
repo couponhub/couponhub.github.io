@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | CouponHub</title>
+    <meta name="description" content="Learn more about CouponHub and our mission to provide the best coupons for Domain, Hosting, and SEO tools.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="bg-background text-foreground font-sans">
+    <div id="header-placeholder"></div>
+    <main class="py-16 container mx-auto px-4 max-w-4xl">
+        <h1 class="text-4xl font-bold mb-8">About CouponHub</h1>
+        <div class="prose prose-slate max-w-none space-y-6 text-muted-foreground">
+            <p>Welcome to CouponHub, your premier destination for finding the most reliable and up-to-date digital coupons in the tech industry. Since 2024, we have been dedicated to helping developers, entrepreneurs, and digital marketers save on the essential tools they need to build their online presence.</p>
+            <h2 class="text-2xl font-bold text-foreground">Our Mission</h2>
+            <p>Our mission is simple: to make high-quality digital services more accessible by providing verified promo codes and exclusive deals for web hosting, domain registration, and professional SEO software.</p>
+            <h2 class="text-2xl font-bold text-foreground">Why Choose Us?</h2>
+            <ul class="list-disc pl-6 space-y-2">
+                <li><strong>Daily Verification:</strong> Our team checks every code daily to ensure they actually work.</li>
+                <li><strong>Exclusive Deals:</strong> We partner directly with leading companies to bring you discounts you won't find anywhere else.</li>
+                <li><strong>Niche Focus:</strong> We specialize in the infrastructure and marketing tools that power the web.</li>
+            </ul>
+        </div>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script>
+        async function loadComponent(id, file) {
+            const res = await fetch(file);
+            const html = await res.text();
+            document.getElementById(id).innerHTML = html;
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            loadComponent('header-placeholder', 'components/header.html');
+            loadComponent('footer-placeholder', 'components/footer.html');
+        });
+    </script>
+</body>
+</html>
