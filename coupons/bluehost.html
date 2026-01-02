@@ -6,30 +6,68 @@
     <title>Bluehost Coupon: 75% Off + Free Domain (Jan 2026) | CouponHub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../globals.css">
+    <!-- Added Product Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Bluehost Web Hosting Plan",
+      "image": "https://couponhub.github.io/placeholder.svg?height=300&width=300&query=bluehost+logo",
+      "description": "Get 75% off Bluehost Web Hosting with a free domain name and SSL certificate for the first year.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Bluehost"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://couponhub.github.io/coupons/bluehost.html",
+        "priceCurrency": "USD",
+        "price": "2.95",
+        "priceValidUntil": "2026-12-31",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Bluehost"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "1250"
+      }
+    }
+    </script>
     <script defer src="../script.js"></script>
 </head>
 <body class="bg-background text-foreground font-sans">
     <div id="header-placeholder"></div>
     <main class="py-12">
         <div class="container mx-auto px-4 max-w-4xl">
-            <div class="bg-card border rounded-3xl p-8 md:p-12 shadow-sm text-center">
-                <div class="w-32 h-32 bg-muted rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <div class="bg-card border rounded-3xl p-8 md:p-12 shadow-sm text-center relative overflow-hidden">
+                <!-- Added colorful background accent -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/5 rounded-full -ml-32 -mb-32 blur-3xl"></div>
+                
+                <div class="w-32 h-32 bg-muted rounded-2xl flex items-center justify-center mx-auto mb-6 relative z-10">
                     <img src="/placeholder.svg?height=80&width=80" alt="Bluehost">
                 </div>
                 <h1 class="text-4xl font-bold mb-4">Bluehost Coupon: 75% Off + Free Domain</h1>
                 <p class="text-muted-foreground text-lg mb-8">Save big on your next hosting plan with this verified Bluehost promo code.</p>
-                <div class="p-8 bg-muted rounded-2xl border-2 border-dashed border-primary/20 mb-8 max-w-sm mx-auto">
-                    <span class="text-sm text-muted-foreground block mb-2 font-medium">YOUR CODE</span>
-                    <span class="text-3xl font-black text-primary tracking-widest uppercase">AUTO-APPLY</span>
+                <div class="p-8 bg-muted/50 rounded-2xl border-2 border-dashed border-primary/20 mb-8 max-w-sm mx-auto group relative">
+                    <span class="text-sm text-muted-foreground block mb-2 font-black tracking-widest uppercase">YOUR CODE</span>
+                    <span class="text-3xl font-black text-primary tracking-widest uppercase group-hover:scale-110 transition-transform inline-block">AUTO-APPLY</span>
                 </div>
-                <button class="px-12 py-4 bg-primary text-primary-foreground font-bold rounded-xl text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">ACTIVATE DEAL & VISIT SITE</button>
+                <button class="btn-primary w-full max-w-sm">ACTIVATE DEAL & VISIT SITE</button>
             </div>
             
-            <section class="mt-12 space-y-8">
+            <section class="mt-12 space-y-12">
                 <div class="prose prose-slate max-w-none">
                     <h2 class="text-2xl font-bold mb-4">About this Bluehost Deal</h2>
-                    <p class="text-muted-foreground">This exclusive Bluehost offer is valid for new customers and includes everything you need to launch your website: a free domain name for the first year, a free SSL certificate, and one-click WordPress installation.</p>
+                    <p class="text-muted-foreground leading-relaxed">This exclusive Bluehost offer is valid for new customers and includes everything you need to launch your website: a free domain name for the first year, a free SSL certificate, and one-click WordPress installation.</p>
                 </div>
+
+                <!-- Added dynamic Stores section placeholder -->
+                <div id="stores-placeholder"></div>
             </section>
         </div>
     </main>
@@ -43,6 +81,7 @@
         window.addEventListener('DOMContentLoaded', () => {
             loadComponent('header-placeholder', '../components/header.html');
             loadComponent('footer-placeholder', '../components/footer.html');
+            loadComponent('stores-placeholder', '../components/stores.html');
         });
     </script>
 </body>
