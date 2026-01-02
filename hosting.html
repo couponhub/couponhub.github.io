@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain & Hosting Coupons | CouponHub</title>
+    <meta name="description" content="Save big on top-rated domain and hosting providers like Bluehost, HostGator, and Namecheap.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="bg-background text-foreground font-sans">
+    <div id="header-placeholder"></div>
+
+    <main class="py-12">
+        <div class="container mx-auto px-4">
+            <!-- Breadcrumbs -->
+            <nav class="flex mb-8 text-sm text-muted-foreground" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li><a href="/" class="hover:text-primary">Home</a></li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 mx-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                        <span class="ml-1 md:ml-2">Domain & Hosting</span>
+                    </li>
+                </ol>
+            </nav>
+
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- Main Content -->
+                <div class="lg:w-3/4">
+                    <div class="mb-12">
+                        <h1 class="text-4xl font-bold mb-4">Domain & Hosting Coupons</h1>
+                        <p class="text-muted-foreground text-lg">Compare and save on the best web hosting and domain registration services in 2026.</p>
+                    </div>
+
+                    <div class="grid gap-6">
+                        <!-- Bluehost -->
+                        <div class="coupon-card bg-card border rounded-xl p-6 flex flex-col md:flex-row gap-6 items-center">
+                            <div class="w-24 h-24 bg-muted rounded-lg flex items-center justify-center shrink-0">
+                                <img src="/placeholder.svg?height=60&width=60" alt="Bluehost" class="rounded">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-xl font-bold mb-1">Bluehost: 75% Off Website Hosting + Free Domain</h3>
+                                <p class="text-muted-foreground text-sm mb-2">Ideal for beginners. Includes 24/7 support and 1-click WordPress install.</p>
+                                <div class="flex gap-2">
+                                    <span class="px-2 py-1 bg-green-100 text-green-700 text-[10px] font-bold rounded uppercase">Verified</span>
+                                    <span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded uppercase">Top Choice</span>
+                                </div>
+                            </div>
+                            <div class="shrink-0 w-full md:w-auto">
+                                <button class="w-full md:w-auto px-6 py-3 bg-primary text-primary-foreground font-bold rounded-lg hover:bg-primary/90">GET DEAL</button>
+                            </div>
+                        </div>
+
+                        <!-- HostGator -->
+                        <div class="coupon-card bg-card border rounded-xl p-6 flex flex-col md:flex-row gap-6 items-center">
+                            <div class="w-24 h-24 bg-muted rounded-lg flex items-center justify-center shrink-0">
+                                <img src="/placeholder.svg?height=60&width=60" alt="HostGator" class="rounded">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-xl font-bold mb-1">HostGator: Up to 65% Off New Hosting Plans</h3>
+                                <p class="text-muted-foreground text-sm mb-2">Fast and affordable hosting with unmetered bandwidth.</p>
+                                <div class="flex gap-2">
+                                    <span class="px-2 py-1 bg-green-100 text-green-700 text-[10px] font-bold rounded uppercase">Verified</span>
+                                </div>
+                            </div>
+                            <div class="shrink-0 w-full md:w-auto">
+                                <button class="w-full md:w-auto px-6 py-3 bg-primary text-primary-foreground font-bold rounded-lg border-2 border-dashed border-primary/50">GATOR65</button>
+                            </div>
+                        </div>
+
+                        <!-- Namecheap -->
+                        <div class="coupon-card bg-card border rounded-xl p-6 flex flex-col md:flex-row gap-6 items-center">
+                            <div class="w-24 h-24 bg-muted rounded-lg flex items-center justify-center shrink-0">
+                                <img src="/placeholder.svg?height=60&width=60" alt="Namecheap" class="rounded">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-xl font-bold mb-1">Namecheap: Register .COM for $5.98</h3>
+                                <p class="text-muted-foreground text-sm mb-2">World's most popular domain registrar with free privacy protection.</p>
+                                <div class="flex gap-2">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 text-[10px] font-bold rounded uppercase">Promo Code</span>
+                                </div>
+                            </div>
+                            <div class="shrink-0 w-full md:w-auto">
+                                <button class="w-full md:w-auto px-6 py-3 bg-primary text-primary-foreground font-bold rounded-lg border-2 border-dashed border-primary/50">NEWCOM598</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside id="sidebar-placeholder" class="lg:w-1/4"></aside>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        async function loadComponent(id, file) {
+            const res = await fetch(file);
+            const html = await res.text();
+            document.getElementById(id).innerHTML = html;
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            loadComponent('header-placeholder', 'components/header.html');
+            loadComponent('footer-placeholder', 'components/footer.html');
+            loadComponent('sidebar-placeholder', 'components/sidebar.html');
+        });
+    </script>
+</body>
+</html>
