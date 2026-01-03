@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap: https://couponhub.github.io/sitemap.xml
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay for other bots (in seconds)
+Crawl-delay: 1

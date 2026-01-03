@@ -1,0 +1,31 @@
+<header class="header">
+    <div class="header-content">
+        <div class="logo-section">
+            <svg class="logo" viewBox="0 0 40 40" width="32" height="32">
+                <rect x="5" y="5" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" rx="4"/>
+                <path d="M 15 20 L 20 25 L 30 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="logo-text">CouponHub</span>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#products" class="nav-link">All Coupons</a></li>
+                <li><a href="#" class="nav-link">Blog</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button class="search-btn" onclick="toggleSearch()">🔍</button>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container" id="search-container" style="display:none;">
+        <input type="text" class="search-input" placeholder="Search coupons...">
+        <button class="search-close" onclick="toggleSearch()">✕</button>
+    </div>
+</header>

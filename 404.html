@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - CouponHub</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <style>
+        .not-found-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: var(--spacing-2xl);
+        }
+
+        .not-found-number {
+            font-size: 8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .not-found-title {
+            font-size: var(--text-3xl);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .not-found-desc {
+            font-size: var(--text-lg);
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-2xl);
+            max-width: 500px;
+        }
+
+        .not-found-button {
+            display: inline-block;
+            padding: var(--spacing-md) var(--spacing-2xl);
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+            color: var(--color-background);
+            border-radius: var(--radius-xl);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all var(--transition-normal);
+            border: none;
+            cursor: pointer;
+        }
+
+        .not-found-button:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-glow);
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <div class="not-found-container">
+        <div class="not-found-number">404</div>
+        <h1 class="not-found-title">Page Not Found</h1>
+        <p class="not-found-desc">Sorry, the page you're looking for doesn't exist. Let's get you back to finding great coupon deals!</p>
+        <a href="index.html" class="not-found-button">Go Back Home</a>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="js/components.js"></script>
+</body>
+</html>

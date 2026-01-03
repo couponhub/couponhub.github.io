@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CouponHub - Best coupon codes and deals for Hostinger, GoDaddy, Namecheap, Semrush, Mangools, and Ahrefs. Save money on top web services.">
+    <meta name="keywords" content="coupons, deals, hosting, domains, SEO tools, Hostinger, GoDaddy, Namecheap, Semrush, Mangools, Ahrefs">
+    <meta name="author" content="CouponHub">
+    <meta name="theme-color" content="#0f172a">
+    <meta property="og:title" content="CouponHub - Exclusive Coupons & Deals">
+    <meta property="og:description" content="Get the best coupon codes and exclusive deals for premium web services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://couponhub.github.io">
+    <title>CouponHub - Best Coupons & Deals for Web Services</title>
+    <link rel="canonical" href="https://couponhub.github.io">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header-container"></div>
+
+    <!-- Hero Section with Slider -->
+    <section class="hero-section">
+        <div class="hero-slider">
+            <div class="slider-wrapper">
+                <div class="slide active" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Find Your Perfect Coupon</h1>
+                        <p class="hero-subtitle">Save up to 70% on premium web services</p>
+                        <a href="#products" class="cta-button primary">Explore Deals</a>
+                    </div>
+                </div>
+                <div class="slide" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Trusted by Thousands</h1>
+                        <p class="hero-subtitle">Access exclusive coupon codes for industry-leading tools</p>
+                        <a href="#products" class="cta-button primary">View All Coupons</a>
+                    </div>
+                </div>
+                <div class="slide" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Never Miss a Deal</h1>
+                        <p class="hero-subtitle">Updated daily with the latest coupon codes and exclusive offers</p>
+                        <a href="#products" class="cta-button primary">Browse Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="slider-controls">
+                <button class="slider-btn prev" onclick="prevSlide()">❮</button>
+                <button class="slider-btn next" onclick="nextSlide()">❯</button>
+            </div>
+
+            <!-- Slider Indicators -->
+            <div class="slider-indicators">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose CouponHub?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✓</div>
+                    <h3>Verified Coupons</h3>
+                    <p>All codes tested and verified to work</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Daily Updates</h3>
+                    <p>Latest deals updated every single day</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Save Big</h3>
+                    <p>Save up to 70% on premium services</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>100% Safe</h3>
+                    <p>Secure and trusted by thousands</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div id="products-container"></div>
+    </section>
+
+    <!-- Footer Component -->
+    <div id="footer-container"></div>
+
+    <!-- Sidebar Component -->
+    <div id="sidebar-container"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "CouponHub",
+        "description": "Best coupon codes and deals for web services",
+        "url": "https://couponhub.github.io",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://couponhub.github.io?search={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+</body>
+</html>
