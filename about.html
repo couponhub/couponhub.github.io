@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | CouponHub - Your Trusted Coupon Source</title>
+  <meta name="description" content="Learn about CouponHub - your trusted source for the best coupon codes and deals on premium services like Hostinger, GoDaddy, Semrush, and more.">
+  <meta name="keywords" content="about, CouponHub, coupon codes, deals, services">
+  <meta property="og:title" content="About Us | CouponHub">
+  <meta property="og:description" content="Learn about CouponHub and our mission to help you save on premium services.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://couponhub.github.io/about.html">
+  <meta name="theme-color" content="#06b6d4">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="logo.jpg">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  <style>
+    .about-hero {
+      padding: var(--spacing-3xl) 0;
+      text-align: center;
+      margin-bottom: var(--spacing-3xl);
+    }
+
+    .about-hero h1 {
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--spacing-3xl);
+      align-items: center;
+      margin-bottom: var(--spacing-3xl);
+      padding: var(--spacing-3xl) 0;
+    }
+
+    .about-content h2 {
+      margin-bottom: var(--spacing-lg);
+      color: var(--color-text-primary);
+    }
+
+    .about-content p {
+      margin-bottom: var(--spacing-lg);
+      font-size: var(--text-base);
+      line-height: 1.8;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--spacing-2xl);
+      margin-bottom: var(--spacing-3xl);
+      padding: var(--spacing-3xl) 0;
+    }
+
+    .value-card {
+      background-color: var(--color-surface);
+      padding: var(--spacing-2xl);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--color-border);
+      text-align: center;
+      transition: all var(--transition-normal);
+    }
+
+    .value-card:hover {
+      border-color: var(--color-primary);
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(6, 182, 212, 0.2);
+    }
+
+    .value-icon {
+      font-size: var(--text-4xl);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .value-card h3 {
+      margin-bottom: var(--spacing-md);
+      color: var(--color-text-primary);
+    }
+
+    .team-section {
+      padding: var(--spacing-3xl) 0;
+      background-color: var(--color-surface);
+      border-radius: var(--radius-xl);
+      margin-bottom: var(--spacing-3xl);
+    }
+
+    .team-title {
+      text-align: center;
+      margin-bottom: var(--spacing-3xl);
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--spacing-2xl);
+    }
+
+    .team-member {
+      text-align: center;
+    }
+
+    .member-avatar {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+      border-radius: 50%;
+      margin: 0 auto var(--spacing-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--text-4xl);
+      color: white;
+    }
+
+    .team-member h3 {
+      margin-bottom: var(--spacing-sm);
+      color: var(--color-text-primary);
+    }
+
+    .team-member p {
+      font-size: var(--text-sm);
+    }
+
+    @media (max-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .values-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <main class="container">
+    <section class="about-hero">
+      <h1>About CouponHub</h1>
+      <p class="hero-subtitle">Your trusted source for premium service deals and coupon codes</p>
+    </section>
+
+    <section class="about-grid">
+      <div class="about-content">
+        <h2>Our Story</h2>
+        <p>CouponHub was founded with a simple mission: to help people save money on the premium services they love. We understand that quality services like web hosting, domain registration, and SEO tools are essential investments for businesses and individuals.</p>
+        <p>We've partnered with the best providers in the industry to bring you exclusive deals, discounts, and coupon codes that help you maximize your investment while maintaining the quality you deserve.</p>
+      </div>
+      <div style="background-color: var(--color-surface); border-radius: var(--radius-xl); height: 300px; border: 1px solid var(--color-border); display: flex; align-items: center; justify-content: center; color: var(--color-text-secondary);">
+        <p style="margin: 0;">Premium Services Platform</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 style="text-align: center; margin-bottom: var(--spacing-3xl); color: var(--color-text-primary);">Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">🎯</div>
+          <h3>Transparency</h3>
+          <p>We provide honest reviews and real coupon codes from trusted sources.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">💰</div>
+          <h3>Savings</h3>
+          <p>Our mission is to help you save money on the services you need.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <h3>Trust</h3>
+          <p>We've built relationships with top providers for exclusive deals.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <div class="container">
+        <div class="team-title">
+          <h2>Our Team</h2>
+          <p style="color: var(--color-text-secondary);">Dedicated professionals committed to bringing you the best deals</p>
+        </div>
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="member-avatar">👨‍💼</div>
+            <h3>John Doe</h3>
+            <p>Founder & CEO</p>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">👩‍💼</div>
+            <h3>Jane Smith</h3>
+            <p>Content Director</p>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">👨‍💻</div>
+            <h3>Mike Johnson</h3>
+            <p>Platform Developer</p>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">👩‍💻</div>
+            <h3>Sarah Williams</h3>
+            <p>SEO Specialist</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script src="js/components.js"></script>
+</body>
+</html>
