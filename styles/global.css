@@ -1,11 +1,11 @@
 :root {
-  /* Color Tokens */
-  --color-background: #0f172a;
-  --color-surface: #1e293b;
-  --color-surface-light: #334155;
-  --color-text-primary: #f1f5f9;
-  --color-text-secondary: #cbd5e1;
-  --color-border: #475569;
+  /* Updated color scheme to cream white theme */
+  --color-background: #faf8f3;
+  --color-surface: #f5f1ea;
+  --color-surface-light: #ebe5dc;
+  --color-text-primary: #2d2620;
+  --color-text-secondary: #6b6158;
+  --color-border: #e0d9ce;
   --color-primary: #06b6d4;
   --color-primary-dark: #0891b2;
   --color-primary-light: #22d3ee;
@@ -122,7 +122,8 @@ a:hover {
   top: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
-  background-color: rgba(30, 41, 59, 0.8);
+  /* Updated header background with cream white backdrop */
+  background-color: rgba(245, 241, 234, 0.95);
 }
 
 .header-content {
@@ -406,7 +407,8 @@ a:hover {
 /* Featured Section */
 .featured-section {
   padding: var(--spacing-3xl) 0;
-  background-color: rgba(30, 41, 59, 0.5);
+  /* Updated featured section background */
+  background-color: rgba(245, 241, 234, 0.7);
   margin-bottom: var(--spacing-3xl);
 }
 
