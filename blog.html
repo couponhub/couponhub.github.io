@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XWXBG2NS66"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XWXBG2NS66');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CouponHub Blog - Tips, tricks, and guides on saving money with web hosting and SEO tool coupons.">
+    <title>Blog - CouponHub Exclusive Insights</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <style>
+        /* Blog Specific Styles */
+        .blog-hero {
+            padding: var(--spacing-3xl) 0;
+            text-align: center;
+            background-color: var(--color-surface);
+            border-bottom: 1px solid var(--color-border);
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-2xl);
+            padding: var(--spacing-3xl) 0;
+        }
+        .blog-card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            transition: all var(--transition-normal);
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--color-primary);
+        }
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .blog-content {
+            padding: var(--spacing-lg);
+            flex-grow: 1;
+        }
+        .blog-meta {
+            font-size: var(--text-xs);
+            color: var(--color-primary);
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: var(--spacing-sm);
+        }
+        .blog-card-title {
+            font-size: var(--text-lg);
+            margin-bottom: var(--spacing-md);
+            color: var(--color-text-primary);
+        }
+        .blog-excerpt {
+            font-size: var(--text-sm);
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-lg);
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <section class="blog-hero">
+        <div class="container">
+            <h1 class="hero-title">CouponHub Blog</h1>
+            <p class="hero-subtitle">Expert guides to help you save on digital infrastructure</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="blog-grid">
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop" alt="Web Hosting Guide" class="blog-image">
+                <div class="blog-content">
+                    <span class="blog-meta">Hosting</span>
+                    <h2 class="blog-card-title">How to Choose the Best Hosting in 2026</h2>
+                    <p class="blog-excerpt">Don't overpay for server space. We break down which providers offer the best value for money.</p>
+                    <a href="#" class="nav-link">Read More →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&auto=format&fit=crop" alt="SEO Tools" class="blog-image">
+                <div class="blog-content">
+                    <span class="blog-meta">SEO Tools</span>
+                    <h2 class="blog-card-title">Top 5 SEO Tools to Grow Your Traffic</h2>
+                    <p class="blog-excerpt">From Semrush to Ahrefs, find out which tool fits your budget and marketing goals.</p>
+                    <a href="#" class="nav-link">Read More →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&auto=format&fit=crop" alt="Coupon Savings" class="blog-image">
+                <div class="blog-content">
+                    <span class="blog-meta">Savings</span>
+                    <h2 class="blog-card-title">The Secret to Finding Hidden Promo Codes</h2>
+                    <p class="blog-excerpt">Learn the techniques our experts use to find verified coupons that actually work at checkout.</p>
+                    <a href="#" class="nav-link">Read More →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1454165833767-131435bb4496?w=800&auto=format&fit=crop" alt="Business Growth" class="blog-image">
+                <div class="blog-content">
+                    <span class="blog-meta">Business</span>
+                    <h2 class="blog-card-title">Scaling Your Agency on a Budget</h2>
+                    <p class="blog-excerpt">How to use discounted premium tools to provide enterprise-level service as a startup.</p>
+                    <a href="#" class="nav-link">Read More →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop" alt="Domain Names" class="blog-image">
+                <div class="blog-content">
+                    <span class="blog-meta">Domains</span>
+                    <h2 class="blog-card-title">Domain Flipping: A Beginner's Guide</h2>
+                    <p class="blog-excerpt">Using Namecheap and GoDaddy deals to build a profitable domain portfolio.</p>
+                    <a href="#" class="nav-link">Read More →</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "CouponHub Blog",
+        "url": "https://couponhub.github.io/blog",
+        "description": "Guides and tips for web service savings",
+        "publisher": {
+            "@type": "Organization",
+            "name": "CouponHub"
+        }
+    }
+    </script>
+</body>
+</html>
